@@ -22,23 +22,23 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 
 import 'dart:io'; <br \>
 
-import 'package:flutter/material.dart';<br \>
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';<br \>
-import 'package:permission_handler/permission_handler.dart';<br \>
+import 'package:flutter/material.dart';<br />
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';<br />
+import 'package:permission_handler/permission_handler.dart';<br />
 
 var _lowCodeUrl = " "; // Replace by your own
 
-void main() {
-runApp(const MyApp());
+void main() {<br />
+runApp(const MyApp());<br />
 }
 
-class MyApp extends StatelessWidget {
-const MyApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {<br />
+const MyApp({Key? key}) : super(key: key);<br />
 
 @override
-Widget build(BuildContext context) {
-if (Platform.isAndroid) {
-_lowCodeUrl += '?skipMediaPermissionPrompt';
+Widget build(BuildContext context) {<br />
+if (Platform.isAndroid) {<br />
+_lowCodeUrl += '?skipMediaPermissionPrompt';<br />
 }
 return const MaterialApp(
 debugShowCheckedModeBanner: false,
@@ -47,7 +47,7 @@ home: InAppWebViewPage(),
 }
 }
 
-class InAppWebViewPage extends StatefulWidget {
+class InAppWebViewPage extends StatefulWidget {<br />
 const InAppWebViewPage();
 
 @override
