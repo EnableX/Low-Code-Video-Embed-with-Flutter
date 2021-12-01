@@ -4,7 +4,91 @@ Documentation
 Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
 Disclaimer
-Enablex publishes these examples to help the developer community understand how the Enablex Low-Code-Video-Embed product can be implemented.
+The EnableX help to the developer community to understand, How the Enablex Low-Code-Video-Embed product can be implemented using webview in Android Native App( Java/kotlin).
 
-Enablex does not recommend using such examples in a production environment without a prior assessment and appropriate testing relevant to the production setup targeted which can be of operational, technical, security or legal (e.g. library licenses assessment) nature. You expressly agree that the use of these examples is at your sole risk.
+
+# How it work
+
+## 1.Add  these  permission handler and Inapp webview package
+
+![GitHub Logo](/images/package.png)
+
+ ## 2.Add  these  permission
+
+![GitHub Logo](/images/permission.png)
+
+
+ ## 3. Here is an example:
+
+import 'dart:io'; <br \>
+
+import 'package:flutter/material.dart';<br \>
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';<br \>
+import 'package:permission_handler/permission_handler.dart';<br \>
+
+var _lowCodeUrl = " "; // Replace by your own
+
+void main() {
+runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+const MyApp({Key? key}) : super(key: key);
+
+@override
+Widget build(BuildContext context) {
+if (Platform.isAndroid) {
+_lowCodeUrl += '?skipMediaPermissionPrompt';
+}
+return const MaterialApp(
+debugShowCheckedModeBanner: false,
+home: InAppWebViewPage(),
+);
+}
+}
+
+class InAppWebViewPage extends StatefulWidget {
+const InAppWebViewPage();
+
+@override
+State<InAppWebViewPage> createState() => _InAppWebViewPageState();
+}
+
+class _InAppWebViewPageState extends State<InAppWebViewPage> {
+
+
+@override
+Widget build(BuildContext context) {
+
+    return Scaffold(
+        appBar: AppBar(title: const Text("Meeting")),
+        body: Column(children: <Widget>[
+          Expanded(
+            child: InAppWebView(
+              initialUrlRequest: URLRequest(url: Uri.parse(_lowCodeUrl)),
+              initialOptions: InAppWebViewGroupOptions(
+                  crossPlatform: InAppWebViewOptions(
+                    mediaPlaybackRequiresUserGesture: false,
+                  ),
+                  ios: IOSInAppWebViewOptions(
+                    allowsInlineMediaPlayback: true,
+                  )),
+              androidOnPermissionRequest: (InAppWebViewController controller,
+                  String origin, List<String> resources) async {
+                await Permission.camera.request();
+                await Permission.microphone.request();
+                return PermissionRequestResponse(
+                    resources: resources,
+                    action: PermissionRequestResponseAction.GRANT);
+              },
+            ),
+          ),
+        ]));
+}
+}
+
+
+
+
+
 

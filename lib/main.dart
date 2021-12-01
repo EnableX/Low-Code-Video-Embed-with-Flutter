@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-var _lowCodeUrl = "https://new.yourvideo.live/617bab415dae7262c0aca609"; // Replace by your own
+var _lowCodeUrl = " "; // Replace by your own
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
 
 class InAppWebViewPage extends StatefulWidget {
    const InAppWebViewPage();
-
 
   @override
   State<InAppWebViewPage> createState() => _InAppWebViewPageState();
