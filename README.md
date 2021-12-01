@@ -1,5 +1,5 @@
 # Low-Code-Video-Embed-with-Flutter
-Sample code for flutter with low-code embed Url
+
 Documentation
 Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
