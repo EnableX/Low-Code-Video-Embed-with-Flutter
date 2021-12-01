@@ -20,7 +20,7 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 
  ## 3. Here is an example:
 
-import 'dart:io'; <br \>
+import 'dart:io'; <br />
 
 import 'package:flutter/material.dart';<br />
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';<br />
