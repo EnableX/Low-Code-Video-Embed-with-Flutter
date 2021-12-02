@@ -1,10 +1,14 @@
 # Low-Code-Video-Embed-with-Flutter
 
+EnableX Video Embed is an easy-to-use Video Calling API loaded with powerful conferencing, collaborative, and reporting features. You can build one-to-one or multiparty video meetings for any application or browser within minutes using its simple yet powerful REST API.
+
+You do not need client-side SDKs to develop an engaging UI layout for a video meeting application. Just select our pre-built UI or you can also design it with the EnableX App Visual Builder, and you can go live within minutes with your fully-functional video meeting application.
+
 Documentation
 Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
-Disclaimer
-The EnableX help to the developer community to understand, How the Enablex Low-Code-Video-Embed product can be implemented using webview in Android Native App( Java/kotlin).
+
+The enableX help to the developer community to understand, How the Enablex Low-Code-Video-Embed product can be implemented using webview in Flutter App( Dart).
 
 
 # How it work
@@ -14,6 +18,7 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 ![GitHub Logo](/images/package.png)
 
  ## 2.Add  these  permission
+### Requires camera and mic permission for Audio and video streaming
 
 ![GitHub Logo](/images/permission.png)
 
