@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-var _lowCodeUrl = "https://meet-qa.yourvideo.live/host/NjIwM2I2NTFjMzIyMTcwMjczYWZhMmQzLTVlNzA3MTg4ZTg2NWRjNWI3MjRiMjhlMg=="; // Replace by your own
+var _lowCodeUrl = " "; // Replace by your own
 
 void main() {
   runApp(const MyApp());
