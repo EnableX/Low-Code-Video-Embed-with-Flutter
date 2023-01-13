@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-var _lowCodeUrl = " "; // Replace by your own
+var _lowCodeUrl = ""; // Replace by your own
 
 void main() {
   runApp(const MyApp());
@@ -43,10 +43,14 @@ class _InAppWebViewPageState extends State<InAppWebViewPage> {
         body: Column(children: <Widget>[
           Expanded(
             child: InAppWebView(
+
               initialUrlRequest: URLRequest(url: Uri.parse(_lowCodeUrl)),
               initialOptions: InAppWebViewGroupOptions(
+
                   crossPlatform: InAppWebViewOptions(
                     mediaPlaybackRequiresUserGesture: false,
+                    supportZoom: false,
+
                   ),
                   ios: IOSInAppWebViewOptions(
                     allowsInlineMediaPlayback: true,
