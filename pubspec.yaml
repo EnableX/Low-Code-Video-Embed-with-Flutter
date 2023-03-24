@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_inappwebview: ^5.7.2+3
   permission_handler: ^10.2.0
-
+  fastor_app_ui_widget: ^1.0.128
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,8 +1,10 @@
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:html';
-import 'dart:ui' as ui;
+// ignore: avoid_web_libraries_in_flutter
+import 'package:fastor_app_ui_widget/fastor_app_ui_widget.dart';
 
+import 'package:fastor_app_ui_widget/fastor_app_ui_widget.dart'  if (dart.library.html)  'dart:ui' as ui;
 
 class WebViewXPage extends StatefulWidget {
   const WebViewXPage({
@@ -14,7 +16,6 @@ class WebViewXPage extends StatefulWidget {
 }
 
 class _WebViewXPageState extends State<WebViewXPage> {
-  late IFrameElement _element;
 
 
   Size get screenSize => MediaQuery.of(context).size;
@@ -26,18 +27,21 @@ class _WebViewXPageState extends State<WebViewXPage> {
 
   @override
   void initState() {
-    // ignore:undefined_prefixed_name
-    ui.platformViewRegistry.registerViewFactory(
-      'LowCodeEmbed',
+    if(kIsWeb) {
+      // ignore:undefined_prefixed_name
+      ui.platformViewRegistry.registerViewFactory(
+          'LowCodeEmbed',
 
-            (int viewId) => IFrameElement()
-          ..width = '640'
-          ..height = '360'
-          ..src = ""// Replace by your own low code url
-          ..style.border = 'none'
-        ..allow= "camera; microphone; fullscreen; speaker; display-capture"
+              (int viewId) =>
+              (IFrameElement()
+            ..width = '640'
+            ..height = '360'
+            ..src = " " // Replace by your own low code url
+            ..style.border = 'none'
+            ..allow = "camera; microphone; fullscreen; speaker; display-capture"
 
-    );
+      ));
+    }
     super.initState();
 
 
@@ -49,11 +53,11 @@ class _WebViewXPageState extends State<WebViewXPage> {
       appBar: AppBar(
         title: const Text('Enablex Meeting'),
       ),
-      body: SizedBox(
+      body:kIsWeb? SizedBox(
         height: screenSize.height,
         width: screenSize.width,
         child: const HtmlElementView(viewType:"LowCodeEmbed" ),
-      ),
+      ):Container(),
     );
   }
 

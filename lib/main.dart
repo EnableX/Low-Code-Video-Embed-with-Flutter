@@ -1,15 +1,12 @@
-import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:low_code_embed_with_flutter/web_page.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-var _lowCodeUrl = " "; // Replace by your own
 
+var _lowCodeUrl = ""; // Replace by your own
 void main() async{
-  WidgetsFlutterBinding.ensureInitialized();
 
   runApp(const MyApp());
 }
@@ -20,9 +17,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:kIsWeb?WebViewXPage(): InAppWebViewPage(),
+    return  const MaterialApp(
+      home: kIsWeb?WebViewXPage():InAppWebViewPage(),
     );
   }
 }
@@ -39,21 +35,21 @@ class _InAppWebViewPageState extends State<InAppWebViewPage> {
 @override
   void initState() {
     // TODO: implement initState
+
     super.initState();
 
-    if (Platform.isAndroid) {
       _lowCodeUrl += '?skipMediaPermissionPrompt';
-    }
+
 
 }
-
+Size get screenSize => MediaQuery.of(context).size;
   @override
   Widget build(BuildContext context) {
 
 
     return Scaffold(
         appBar: AppBar(title: const Text("Meeting")),
-        body: Column(children: <Widget>[
+        body:Column(children: <Widget>[
           Expanded(
             child: InAppWebView(
 
