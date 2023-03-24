@@ -33,7 +33,7 @@ class _WebViewXPageState extends State<WebViewXPage> {
             (int viewId) => IFrameElement()
           ..width = '640'
           ..height = '360'
-          ..src = ""// Replace by your own url
+          ..src = ""// Replace by your own low code url
           ..style.border = 'none'
         ..allow= "camera; microphone; fullscreen; speaker; display-capture"
 

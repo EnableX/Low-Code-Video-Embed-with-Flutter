@@ -6,7 +6,7 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:low_code_embed_with_flutter/web_page.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-var _lowCodeUrl = "https://jayprakash.yourvideo.live/host/NjJmMGQzNDZmNDkyYTMzYTQ2NzM4NzBhLTYyZjBkMmY2YTA2NmYyM2I1NTYwNWZkNA=="; // Replace by your own
+var _lowCodeUrl = " "; // Replace by your own
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
