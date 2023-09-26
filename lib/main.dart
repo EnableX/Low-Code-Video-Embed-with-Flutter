@@ -7,13 +7,11 @@ import 'package:permission_handler/permission_handler.dart';
 
 var _lowCodeUrl = ""; // Replace by your own
 void main() async{
-
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
 

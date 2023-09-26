@@ -31,7 +31,6 @@ class _WebViewXPageState extends State<WebViewXPage> {
       // ignore:undefined_prefixed_name
       ui.platformViewRegistry.registerViewFactory(
           'LowCodeEmbed',
-
               (int viewId) =>
               (IFrameElement()
             ..width = '640'
