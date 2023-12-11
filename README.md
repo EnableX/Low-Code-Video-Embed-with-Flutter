@@ -1,16 +1,41 @@
-# Low Code Embed with Flutter: Kickstart Your Mobile Development Journey
+# EnableX Low-Code Video Embed for Android: Easy Video Calling Integration with WebView and Permissions
 
-A new Flutter project.
+Low-Code Video Embed with Flutter - EnableX Video Integration 
 
-## Getting Started
+Experience the simplicity of EnableX Video Embed, a user-friendly Video Calling API equipped with robust conferencing, collaboration, and reporting capabilities. Whether you need to create 1-to-1 or multiparty video meetings for your application or browser, this API offers a seamless solution through its straightforward REST API. 
 
-This project is a starting point for a Flutter application.
+Gone are the days of complex UI development with client-side SDKs. You can effortlessly achieve an engaging UI layout for your video meeting application by choosing our pre-built UI or designing a custom one using the EnableX App Visual Builder. Within minutes, you can launch your fully-functional video meeting application, ready to connect users. 
 
-A few resources to get you started if this is your first Flutter project:
+For comprehensive documentation and to kickstart your implementation, visit https://www.enablex.io/developer/video/low-code-video-embed/. Explore how EnableX's Low-Code Video Embed product seamlessly integrates with Android Native Apps using webview (Java/Kotlin), providing valuable support to the developer community. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ # Documentation
+Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+The enableX help to the developer community to understand, How the enablex Low-Code-Video-Embed product can be implemented using webview in Flutter Hybrid App( Java/kotlin).
+
+# How it works
+
+# 1.Add  these  permission 
+## Requires camera and mic permission for Audio and video streaming 
+
+
+ ![GitHub Logo](/images/permission.png)
+
+
+
+
+
+# 4.Request the permissions if needed.
+ ## Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
+
+   "low code embed url"
+
+
+# Screenshots
+
+![GitHub Logo](/images/initial_page.jpg)
+
+
+![GitHub Logo](/images/conference.jpg)
+
