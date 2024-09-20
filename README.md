@@ -6,10 +6,10 @@ Experience the simplicity of EnableX Video Embed, a user-friendly Video Calling 
 
 Gone are the days of complex UI development with client-side SDKs. You can effortlessly achieve an engaging UI layout for your video meeting application by choosing our pre-built UI or designing a custom one using the EnableX App Visual Builder. Within minutes, you can launch your fully-functional video meeting application, ready to connect users. 
 
-For comprehensive documentation and to kickstart your implementation, visit https://www.enablex.io/developer/video/low-code-video-embed/. Explore how EnableX's Low-Code Video Embed product seamlessly integrates with Android Native Apps using webview (Java/Kotlin), providing valuable support to the developer community. 
+For comprehensive documentation and to kickstart your implementation, visit https://developer.enablex.io/docs/guides/low-code-video-guide/integration/index/. Explore how EnableX's Low-Code Video Embed product seamlessly integrates with Android Native Apps using webview (Java/Kotlin), providing valuable support to the developer community. 
 
  # Documentation
-Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
+Visit https://developer.enablex.io/docs/guides/low-code-video-guide/integration/index/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
 
 The enableX help to the developer community to understand, How the enablex Low-Code-Video-Embed product can be implemented using webview in Flutter Hybrid App( Java/kotlin).
