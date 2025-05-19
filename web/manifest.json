@@ -1,6 +1,6 @@
 {
-    "name": "low_code_embed_with_flutter",
-    "short_name": "low_code_embed_with_flutter",
+    "name": "low_code_sample",
+    "short_name": "low_code_sample",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
