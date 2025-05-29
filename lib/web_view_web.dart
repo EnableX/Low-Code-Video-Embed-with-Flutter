@@ -5,7 +5,7 @@ import 'package:flutter/widgets.dart';
 
 Widget buildWebView() {
   const String viewId = 'LowCodeEmbed';
-  const String lowCodeUrl = 'https://your-low-code-url.com?skipMediaPermissionPrompt'; // Replace it
+  const String lowCodeUrl = 'https://live-qa.yourvideo.live/678a50772a6b8c633d49dfdc?landing=no&name=vk&audio=no&video=no?skipMediaPermissionPrompt'; // Replace it
 
   // Register the iframe only once
   // ignore: undefined_prefixed_name
